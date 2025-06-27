@@ -1,0 +1,17 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: My workflow
+
+on:
+  workflow_dispatch:
+      
+      
+jobs:
+
+  use-action:
+    steps:
+      - name: use action (job step name)
+        uses: mluzcabrera/testaction@main
+        id: step00
+        with:
+          string-val: 'test string'
