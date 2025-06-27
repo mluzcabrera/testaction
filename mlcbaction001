@@ -1,0 +1,18 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: action
+name: mlcb action 001
+inputs:
+  string-val:  # id of input
+    description: 'sample string'
+    required: false
+
+
+runs:
+  using: composite
+  steps:
+    - id: invoke-action
+      name: invoke-action (action step name)
+      uses: docker://golang:1.20.3-alpine3.17 
+      shell: sh
+      run: |
+        echo "Hello there!" 
