@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: use action (job step name)
         uses: mluzcabrera/testaction@main
-        id: step00
+        with:
+          string-val: 'test string'
+      - name: use action2 (job step name)
+        uses: mluzcabrera/testaction@main
         with:
           string-val: 'test string'
