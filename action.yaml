@@ -10,14 +10,14 @@ inputs:
 runs:
   using: composite
   steps:
-    - id: invoke-action
-      name: invoke-action (action step name)
+    - id: action-step1
+      name: action step 1 (action step name)
       uses: docker://golang:1.20.3-alpine3.17 
       shell: sh
       run: |
         echo "Hello there!" 
-    - id: invoke-action2
-      name: invoke-action2 (action step name)
+    - id: action-step2
+      name: action step 1 (action step name)
       uses: docker://golang:1.20.3-alpine3.17 
       shell: sh
       run: |
