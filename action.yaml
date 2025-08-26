@@ -17,7 +17,7 @@ runs:
       run: |
         echo "Hello there!" 
     - id: action-step2
-      name: action step 1 (action step name)
+      name: action step 2 (action step name)
       uses: docker://golang:1.20.3-alpine3.17 
       shell: sh
       run: |
