@@ -8,13 +8,13 @@ on:
       
 jobs:
 
-  use-action:
+  job-that-uses-testaction:
     steps:
-      - name: use action (job step name)
+      - name: step that uses testaction (job step name)
         uses: mluzcabrera/testaction@main
         with:
           string-val: 'test string'
-      - name: use action2 (job step name)
+      - name: step that uses testaction 2 (job step name)
         uses: mluzcabrera/testaction@main
         with:
           string-val: 'test string'
